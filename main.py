@@ -14,7 +14,7 @@ MONGO_URL = os.environ.get("MONGO_URL", None)
 
 
 bot = Client(
-    "VickBot" ,
+    "Alisha" ,
     api_id = API_ID,
     api_hash = API_HASH ,
     bot_token = BOT_TOKEN
@@ -30,9 +30,9 @@ async def is_admins(chat_id: int):
     ]
 
 
-@bot.on_message(filters.command("start"))
+@bot.on_message(filters.command("mstart"))
 async def start(client, message):
-        await message.reply_text("Hi! My name is Ishi. I'm an Artificial Intelligence\n /chatbot - [on|off]")
+        await message.reply_text("Hi! My name is Alisha. I'm an Artificial Intelligence\n /chatbot - [on|off]")
 
 
 @bot.on_message(
